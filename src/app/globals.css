@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --max-width: 1440px;
+  --viewport-height: 900px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +20,13 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  max-width: var(--max-width);
+  min-height: var(--viewport-height);
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  body {
+    max-width: 100%;
+  }
 }
